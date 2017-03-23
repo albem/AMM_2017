@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calcio Giovanile &raquo; Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Calcio Giovanile, Settore Giovanile, Attivita' di base, Calcio, Campionati, Tornei">
+        <meta name="description" content="calciogiovanile.com - Profilo">
+        <meta name="author" content="Alberto Mulas">
+    </head>
+    
+    <body>
+        <h1>calciogiovanile.com - Profilo</h1>
+        <!--form creazione/modifica profilo -->
+        <div>
+            <h2>Crea qui il tuo profilo!</h2>
+            <form action="profilo.html" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"/>
+                <label for="cognome">Cognome:</label>
+                <input type="text" name="cognome" id="cognome"/>
+                <label for="immagine">URL Immagine del profilo:</label>
+                <input type="url" name="immagine" id="immagine"/>
+                <label for="descrizione">Il tuo motto:</label>
+                <textarea rows="5" cols="40" name="descrizione" id="descrizione">Inserisci qui una frase che ti rappresenta</textarea>
+                <p>Data di nascita (formato gg/mm/aaaa):
+                <input type="number" name="giorno" id="giorno" min="1" max="31" step="1" size="2">/
+                <input type="number" name="mese" id="mese" min="1" max="12" step="1">/
+                <input type="number" name="anno" id="anno" min="1940" max="2000" step="1"></p>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd" value="oscurato"/>
+                <label for="c_pwd">Conferma Password:</label>
+                <input type="password" name="c_pwd" id="c_pwd" value="oscurato"/>
+                <input type="submit" value="Salva"/>
+                <input type="reset" value="Modifica"/>
+            </form>  
+        </div>
+        
+        <!--sezione di navigazione -->
+        <div>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
