@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Calcio Giovanile &raquo; Bacheca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Calcio Giovanile, Settore Giovanile, Attivita' di base, Calcio, Campionati, Tornei">
+        <meta name="description" content="calciogiovanile.com - Bacheca">
+        <meta name="author" content="Alberto Mulas">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>
+        <div id="page">
+        
+            <header>
+                <div id="header">
+                    <h2>CalcioGiovanile</h2>
+                </div>
+            </header>
+        
+            <!-- Navigation bar -->
+            <div id="menubar">
+                <a class="corrente" href="bacheca.html">Bacheca</a>
+                <a class="menu" href="profilo.html">Profilo</a>
+                <div id="logged"><img src="img/user_icon.jpg" alt="profile" width="15" height="15" title="">
+                <a href="profilo.html">Mario Rossi</a><a href="login.html">Logout</a>
+                </div>
+            </div>
+            
+        <!-- Sidebar sinistra -->
+            <div id="sidebarleft">
+                <input type="text" id="cerca" value="Cerca..."/>
+                <div class="sidebox">
+                    <h3>Persone:</h3>
+                    <div><img src="img/user_icon.jpg" alt="profile" width="15" height="15" title="">
+                        <a href="profilo.html">Mario Rossi</a></div>
+                    <div><img src="img/user_icon.jpg" alt="profile" width="15" height="15" title="">
+                        <a href="profilo.html">Carlo Bianchi</a></div>
+                    <div><img src="img/user_icon.jpg" alt="profile" width="15" height="15" title="">
+                        <a href="profilo.html">Paolo Verdi</a></div>
+                </div>
+                <div class="sidebox">
+                    <h3>Gruppi:</h3>
+                    <div><img src="img/group_icon.png" alt="profile" width="15" height="15" title="">
+                        <a href="profilo.html">Istruttori</a></div>
+                    <div><img src="img/group_icon.png" alt="profile" width="15" height="15" title="">
+                        <a href="profilo.html">Dirigenti</a></div>
+                </div>
+            </div>
+        
+        <div id="content">
+        <!--ultimi post pubblicati -->
+            
+                <div id="current_user">
+                    <img src="img/user_icon.jpg" alt="profile" width="15" height="15" title="">
+                            <a href="profilo.html">Mario Rossi:</a>
+                    <span>Ci vorrebbe proprio un'app per il ritiro dei rifiuti ingombranti!</span>
+                </div>
+            
+            <div class="post">
+                <div id="newpost">
+                    <img src="img/write.jpg" alt="" width="30" height="30" title="">
+                    <textarea rows="2" cols="20" name="descrizione" id="nuovopost">Scrivi qui il tuo post...</textarea>
+                    <img src="img/allegato.jpg" alt="" width="30" height="30" title="">
+                    <input type="url" name="immagine" id="post_immagine" value="Inserisci l'URL..."/>
+                    <div>
+                    <form action="bacheca.html">
+                    <input type="radio" id="link_a" name="link_a" value="immagine"> Immagine
+                    <input type="radio" id="link_a" name="link_a" value="link"> Link
+                    </form></div>
+                    <input class="button" type="submit" value="Pubblica"/>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/profile.jpg" alt="profile" width="80" height="50" title="">
+                <a href="profilo.html">Mario Rossi</a>
+                <p>Ciao a tutti, mi sono appena iscritto!</p>
+            </div>
+            <div class="post">
+                <img src="img/profile.jpg" alt="profile" width="80" height="50" title="">
+                <a href="profilo.html">Carlo Bianchi</a>
+                <p>Ciao a tutti, è stato appena inagurato il nuovo impianto federale! Vi allego una foto:
+                <img src="img/sarodia.jpg" alt="" width="300" height="150" title=""></p>
+            </div>
+            <div class="post">
+                <img src="img/profile.jpg" alt="profile" width="80" height="50" title="">
+                <a href="profilo.html">Paolo Verdi</a>
+                <p>Ciao ragazzi, sono usciti i nuovi tornei della FIGC, potete dare un'occhiata a questo
+                <a href="http://cagliari.figc-sardegna.it/">link</a></p>
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        </div>
+    </body>
+</html>
+

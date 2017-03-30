@@ -1,0 +1,365 @@
+    /* 
+        Created on : 29-mar-2017, 18.22.35
+        Author     : Alberto Mulas
+    */
+
+    /* Assegno le regole che il resto del documento erediter� */
+    body {
+        font-family: sans-serif, helvetica;
+        color: navy;
+    }
+
+    /* Testata del sito */
+    #header {
+        background-color: navy;
+        margin-right: 10px;
+        border-radius: 24px 0 0 0;
+        box-shadow: 0 5px 5px navy;
+        color:white;  
+        float: left;
+        width: 45%;
+    }
+
+    /* Barra di navigazione incorporata nella testata del sito */
+    #menubar {
+        border-bottom: 1px white solid;
+        border-radius: 24px 24px 0px 0px;
+        background-color: red;
+        padding: 25px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Singoli tasti della navigation bar */
+    .menu, .menu a {
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* Effetto sui tasti del men� al passaggio del mouse */
+    #menubar a:hover {
+        background-color: navy;
+        color: white;
+        box-shadow: 0px 5px 5px navy;
+        padding-bottom: 25px;
+        padding-top: 26px;    
+    }
+    
+    #menubar a.corrente {
+        background-color: navy;
+        color: white;
+        box-shadow: 0px 5px 5px navy;
+        padding-bottom: 25px;
+        padding-top: 26px;    
+    }
+
+    #logged {
+        float:right;
+    }
+    
+    /* Corpo della pagina */
+    #content {
+        float: left;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #current_user {
+        border: 1px solid red;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .post {
+        border: 1px solid red;
+        padding: 10px 25px 0px 25px;
+        margin: 20px;
+    }
+
+    #newpost img {
+        padding: 2px;
+        float: left;
+    }
+
+    #nuovopost, #post_immagine {
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    /* Pi� di pagina */
+    #footer {
+        margin: 10px;
+        background-color: navy;
+        border-radius: 0px 0px 24px 24px;
+        border: 1px solid red;
+        color:white;  
+    }
+
+    /* Separatore che precede il footer */
+    .clear {
+        clear:both; 
+        width: 0px; 
+        height: 0px;
+    }
+
+    /* Impostazioni destinate al tag img per rendere scalabile la dimensione delle immagini */
+    img{
+        max-width: 100%; 
+        height: auto;
+    }
+
+    /* Titoli */
+    h1, h2, h3 {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    /* Paragrafo */
+    p {
+        text-align: justify;
+        margin-top: 40px;
+    }
+
+    /* Link */
+    a {
+        color: navy;
+    }
+
+    /* Cambio del colore al mouseover sui link */
+    a:hover {
+        color: red;
+    }
+
+    /* Assegno le regole per le dimensioni e l'allineamento dei form */
+    form {
+        width: 65%;
+        margin: auto;
+    }
+
+    /* Regole ai tag delle etichette dei form */
+    label{
+            float: left;
+            display: block;
+            padding-top: 10px;
+    }
+
+    #login {
+        width: 55%;
+    }
+    
+    /* Regole ai tag di input dei form */
+    input, textarea {
+        border: 1px solid red;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 47%;
+    }
+
+    input:focus {
+        border: 1px solid navy;
+    }
+
+    #giorno, #mese{
+        width: 11%;
+    }
+    #anno {
+        width: 18%;
+    }
+
+    #link_a {
+        width: 20%;
+    }
+    
+    /* Modifico i tasti relativi ai form */
+    .button{
+        background-color: red;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Effetto mouseover sui tasti del form */
+    .button:hover {
+        color: navy;
+        background-color: white;
+    }
+    
+    #sidebarleft {
+        width: 26%;
+        float: left;
+        margin-left: 10px;
+    }
+    
+    #cerca {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .sidebox, a{
+        padding: 5px;
+        margin: 10px;
+        font-weight: bold;  
+        text-decoration: none;
+    }
+
+    #content{
+        width: 70%;
+        border-left: 1px solid red;
+    }
+    /* Da qui in poi sono impostate le regole in funzione della risoluzione
+       dei dispositivi. Le regole non specificate vengono ereditate dalle indicazioni precedenti */
+    @media only screen and (min-width: 1024px) {
+
+    #page {
+        width: 75%;
+        margin: 10px auto;
+        border: 2px solid red;
+        border-radius: 25px;    
+    }
+
+    #header {
+        padding-left: 2%;
+        width: 25%;
+        float: left;
+    }
+           
+    #footer {
+        height: 100px;
+        border-top: 20px solid red;
+        margin: 10px auto 0px;
+    }
+    
+    #footer img {
+        padding-left: 49%;
+    }
+    
+    #fotoprofilo {
+        float:left;
+        margin-left: 12px;
+    }
+
+    label{
+        width: 50%;
+    }
+    
+    /* Classe creata per il posizionamento dell'immagine ottenuta
+    dalla validazione del file CSS */
+    .valid {
+        margin-bottom: -40px;
+        margin-top: 35px;
+        padding-left: 38%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+
+    #page {
+        width: 98%;
+        border: 2px solid red;
+        border-radius: 25px;    
+    }
+
+    #header {
+        padding-left: 8px;
+        float: left;
+    }
+    
+    #sidebarleft {
+        width: 32%;
+    }
+
+    #content{
+        width: 62%;
+        padding: 10px;
+    }
+    
+    #nuovopost, #post_immagine {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    #footer {
+        height: 100px;
+        border-top: 20px solid red;
+        margin: auto;    
+    }
+        
+    #footer img {
+        padding-left: 55%;
+    }
+    
+    label{
+        width: 90%;
+    }
+    
+    input, textarea {
+        width: 90%;
+    }
+    
+    .valid {
+        margin-bottom: -40px;
+        margin-top: 35px;
+        padding-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #page {
+        width: 98%;
+        border: 2px solid red;
+        border-radius: 25px;    
+    }
+    
+    #header {
+        padding-left: 8px;
+        float: left;
+    }
+    
+    .menu, .menu a {
+        padding: 0px;
+    }
+  
+    #logged{
+        display: none;
+    }
+    
+    #sidebarleft {
+        display: none;
+    }
+    
+    #content{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    #nuovopost, #post_immagine {
+        width: 75%;
+        margin-left: 30px;
+    }
+    
+    #footer {
+        height: 30px;
+        border-top: 5px solid red;
+        margin: auto;    }
+    
+    #footer img {
+        display: none;
+    }
+    
+    label{
+        width: 90%;
+    }
+    
+    input, textarea {
+        width: 90%;
+    }
+    
+    .valid {
+        display: none;
+    }
+}
